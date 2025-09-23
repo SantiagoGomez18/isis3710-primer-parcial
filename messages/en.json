@@ -1,5 +1,8 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Pokemon List",
+    "footer" : "© 2025 PokeApp All rights reserved",
+    "footer2" : "Developed by ISIS3710",
+    "detalle" : "Pokemon Detail"
   }
 }
