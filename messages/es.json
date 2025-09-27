@@ -3,6 +3,10 @@
     "title": "Lista de Pokemones",
     "footer" : "© 2025 PokeApp Todos los derechos reservados",
     "footer2" : "Desarrollado por ISIS3710",
-    "detalle" : "Detalle del Pokemon"
+    "detalle" : "Detalle del Pokemon",
+    "Altura": "Altura",
+    "Peso": "Peso",
+    "Habilidades": "Habilidades",
+    "Tipos": "Tipos"
   }
 }

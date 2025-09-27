@@ -1,24 +1,11 @@
-import { useTranslations } from 'next-intl';
-import React from 'react';
 
-async function fetchPokemonData(id) {
-    return await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-        .then(response => response.json())
-    }
+import { type FC } from 'react'
+import Detalle from '../../components/Detalle/page'
 
-export default async function Detalle({params}) {
-    const t = useTranslations('HomePage');
-    const data = await params;
+type Props = { params: { id: string } }
 
-    const pokemonData = await fetchPokemonData(data.id);
-
-    return (
-        <div>
-            <div>
-                <h1>{pokemonData.name}</h1>
-                <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />  
-            </div>
-        </div>
-    );
+const Page: FC<Props> = ({ params }) => {
+  return <Detalle id={params.id} />
 }
 
+export default Page

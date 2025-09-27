@@ -3,13 +3,12 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import Header from './components/Header/page';
-import Footer from './components/Footer/page';
+
 
 
 export const metadata: Metadata = {
-  title: "Pokedex Nacional - PokeApp",
-  description: "Explora la Pokédex de la primera generación: un listado completo de Pokémon con sus características y detalles principales.",
+  title: "Detalle del Pokémon - PokeApp",
+  description: "Consulta información detallada de cada Pokémon: estadísticas, tipos, habilidades y otros datos relevantes de la primera generación.",
 };
 
 type Props = {
@@ -25,14 +24,8 @@ export default async function RootLayout({children, params}: Props) {
   }
 
   return (
-    <html lang="en">
-      <body>
-        <NextIntlClientProvider>
-          <Header />
-            {children}
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <div>
+        {children}
+    </div>
   );
 }
